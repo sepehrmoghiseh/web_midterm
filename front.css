@@ -1,0 +1,208 @@
+* { /* default setting for every block */
+    margin: 0;
+    padding: 0;
+
+}
+
+.background { /*back ground setting such as image & size */
+    display: flex;
+    background-image: url("pictures/3414986.png");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.info { /*left box block settings such as margin & size */
+    box-shadow: 0 0 0 1px rgba(218, 102, 123, 1), 8px 8px 0 0 rgba(218, 102, 123, 1);
+    border-radius: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 2em;
+    position: relative;
+    width: 20cm;
+    height: 10cm;
+    background-size: cover;
+    top: 20%;
+    left: 10%;
+}
+
+
+.info::before { /* what we should do for a box with opacity and background image*/
+    content: "";
+    border-radius: 2%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("pictures/business-cartoon-watercolor-splash-company-profile-powerpoint-background_eca1de691b__960_540.jpg");
+    background-size: cover;
+    opacity: 0.75;
+}
+
+
+.bio { /*bio section settings*/
+
+    position: relative;
+    margin-left: 2%;
+    width: 80%;
+    height: 30%;
+    font-family: "Nirmala UI";
+
+    font-size: 18px;
+
+}
+
+.paragraph { /*paragraph section setting */
+    top: 20%;
+    position: relative;
+
+    width: 60%;
+    height: 40%;
+    left: 10%;
+
+
+}
+
+
+.paragraph p { /*for each p in paragraph class */
+    padding-left: 3px;
+    margin-bottom: 1cm;
+    font-size: 18px;
+    font-family: "Nirmala UI";
+}
+
+.image { /*user image that we upload from github*/
+    position: relative;
+    border-radius: 25px;
+    padding: 10px;
+    width: 25%;
+    height: 60%;
+    object-fit: cover;
+}
+
+.entering::before { /*right box setting that we need done to have a box with background image and less opacity */
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 25px;
+    background-image: url("pictures/business-cartoon-watercolor-splash-company-profile-powerpoint-background_eca1de691b__960_540.jpg");
+    background-size: cover;
+    opacity: 0.75;
+}
+
+.entering { /* right box */
+    box-shadow: 0 0 0 1px rgba(218, 102, 123, 1), 8px 8px 0 0 rgba(218, 102, 123, 1);
+    border-radius: 25px;
+
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    width: 10cm;
+    height: 10cm;
+    flex-wrap: wrap;
+    position: relative;
+    background-size: cover;
+    top: 20%;
+    left: 10%;
+}
+
+.box { /* input box for entering username */
+    display: block;
+    left: 2.5cm;
+    top: 2.5cm;
+    position: relative;
+    width: 30%;
+    height: 10%;
+    font-family: Oswald-Medium;
+    font-size: 16px;
+    color: #43383e;
+    line-height: 1.2;
+    position: relative;
+    display: block;
+    background: #fff;
+    border-radius: 31px;
+    padding: 0 35px;
+}
+
+.submit { /* submit button */
+
+    position: relative;
+    top: 1cm;
+    width: 30%;
+    height: 10%;
+    left: 3.5cm;
+    top: 3cm;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+.submit:hover { /* what we do when mouse is focused on button */
+    background-color: #fff;
+}
+
+.submit:active { /* what we do when button is clicked */
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .submit {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+
+.third::before { /* third box for handling network error & user error */
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 25px;
+    background-image: url("pictures/business-cartoon-watercolor-splash-company-profile-powerpoint-background_eca1de691b__960_540.jpg");
+    background-size: cover;
+    opacity: 0.75;
+}
+
+.third { /* box for handling network error & user error */
+    display: none;
+    margin: 2cm;
+    width: 6cm;
+    height: 4cm;
+    flex-wrap: wrap;
+    position: relative;
+    background-size: cover;
+    top: 60%;
+    right: 20%;
+}
+
+.not { /* the paragraph in third box  */
+    left: 1.6cm;
+    top: 1.5cm;
+    position: relative;
+    font-size: 20px;
+    font-family: "Gill Sans MT";
+}
